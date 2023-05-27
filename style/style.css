@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(/font/Inter-VariableFont_slnt\,wght.ttf);
+}
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+  cursor: pointer;
+}
+body p {
+  font-size: 24px;
+}
+
+.contener {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo .img_logo img {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+}
+.logo .text_logo {
+  color: #642810;
+  text-shadow: #642810 1px 0 5px;
+  font-size: 12pt;
+}
+.logo .text_logo a:hover {
+  text-decoration: underline;
+  text-shadow: #241d1a 1px 0 5px;
+}
+
+.menu {
+  display: flex;
+  padding: 0 15px;
+  list-style: none;
+  justify-content: space-around;
+}
+.menu .element_menu {
+  padding: 15px;
+}
+.menu .element_menu a {
+  color: #853515;
+}
+.menu .element_menu:hover {
+  background-color: #853515;
+  border-radius: 25px;
+}
+.menu .element_menu:hover a {
+  color: aliceblue;
+}
+.menu .element_menu:active {
+  background-color: #8b5c35;
+}
+
+.pages {
+  padding: 0 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.pages a {
+  padding: 0 15px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.info .content {
+  grid-column: 1/2;
+  display: block;
+}
+.info .content .text {
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 160px;
+}
+.info .content .btn_older {
+  margin-top: 24px;
+  background-color: #853515;
+  border-radius: 15px;
+  width: 200px;
+  height: 50px;
+}
+.info .content .btn_older a {
+  color: aliceblue;
+}
+.info .content .btn_older:active {
+  background-color: #8b5c35;
+}
+
+.img_info {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.sub_logo {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.blok_info {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 15px 0 15px 0;
+}
+.blok_info .img_info {
+  grid-column: 1;
+  grid-row: 1;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0);
+}
+.blok_info .text-info {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 150px 35px 25px 0;
+}
+.blok_info .text-info h3 {
+  padding-left: 35px;
+  font-size: 35px;
+  text-shadow: #642810 1px 0 5px;
+}
+.blok_info .text-info p {
+  margin-top: 25px;
+  padding: 0 35px 0 25px;
+  font-weight: 200;
+}
+
+.promo {
+  margin: 35px 0;
+}
+
+.product {
+  display: block;
+  margin: 35px 0;
+}
+.product .sorting_selection {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  padding: 15px;
+  margin-right: 15px;
+}
+.product .sorting_selection:hover {
+  background-color: #853515;
+  border: none;
+  border-bottom: 5px solid #642810;
+  color: #fff;
+  padding: 15px;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+.product .sorting_selection:active {
+  background-color: #8b5c35;
+  border: none;
+  border-bottom: 5px solid #642810;
+  color: #fff;
+  padding: 15px;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
+.feedback {
+  box-shadow: 50px 50px 113px #fff inset, 25px 25px #defeec inset;
+  background: url(../img/barista.jpg);
+  background-position: 35% 60%;
+  width: 1200px;
+  height: 750px;
+  margin-top: 50px;
+  background-color: linear-gradient(#fff, rgba(255, 0, 255, 0));
+}
+.feedback .text_feedback {
+  padding-top: 80px;
+}
+.feedback .text_feedback h2 {
+  width: 550px;
+  margin: 50px 45px 30px;
+  font-size: 44px;
+  background-color: #572d0b;
+  color: #fff;
+}
+.feedback .text_feedback p {
+  display: flex;
+  width: 550px;
+  margin: 60px 45px 50px;
+  color: #fff;
+  font-weight: 800;
+  background-color: #8b5c35;
+}
+.feedback .forma_feedback {
+  font-weight: 200;
+  margin: 200px 15%;
+}
+.feedback .forma_feedback input {
+  padding: 15px;
+  border-radius: 25px;
+  margin: 0 15px;
+  width: 220px;
+}
+.feedback .btn_call {
+  background-color: #572d0b;
+  color: #fff;
+  font-weight: 800;
+}
+.feedback .btn_call:hover {
+  background-color: #8b5c35;
+  color: rgb(49, 49, 49);
+}
+
+footer {
+  margin-top: 25px;
+  background-color: rgba(139, 92, 53, 0.3294117647);
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 14px;
+}
+.contact .address {
+  grid-column: 1;
+}
+.contact .time_work {
+  grid-column: 1;
+  grid-row: -2;
+}
+.contact .address_mail {
+  grid-column: 2;
+  grid-row: 1;
+}/*# sourceMappingURL=style.css.map */
